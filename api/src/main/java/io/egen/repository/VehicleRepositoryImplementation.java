@@ -9,9 +9,6 @@ import javax.persistence.TypedQuery;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by darav on 6/28/2017.
- */
 @Repository
 public class VehicleRepositoryImplementation implements VehicleRepository {
 

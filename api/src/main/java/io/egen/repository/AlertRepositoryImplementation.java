@@ -11,9 +11,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by darav on 6/29/2017.
- */
 @Repository
 public class AlertRepositoryImplementation implements AlertRepository {
 

@@ -11,10 +11,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by darav on 6/28/2017.
- */
-
 @Repository
 public class ReadingRepositoryImplementation implements ReadingRepository {
 

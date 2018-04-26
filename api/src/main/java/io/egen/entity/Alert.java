@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.UUID;
 
-/**
- * Created by darav on 6/29/2017.
- */
+
 @Entity
 @NamedQueries({
         @NamedQuery(

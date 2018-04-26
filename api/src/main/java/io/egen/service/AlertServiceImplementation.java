@@ -8,9 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by darav on 6/29/2017.
- */
 @Service
 public class AlertServiceImplementation implements AlertService {
 

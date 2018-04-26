@@ -13,9 +13,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-/**
- * Created by darav on 6/28/2017.
- */
 @Configuration
 @EnableTransactionManagement
 public class JPAConfig

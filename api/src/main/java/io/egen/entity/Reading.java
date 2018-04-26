@@ -4,10 +4,6 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.UUID;
 
-/**
- * Created by darav on 6/24/2017.
- */
-
 @Entity
 @NamedQueries({
         @NamedQuery(name="Reading.fetchCoordinatesByVin",

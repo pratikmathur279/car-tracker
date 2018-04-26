@@ -7,10 +7,6 @@ import org.springframework.stereotype.Service;
 
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by darav on 6/28/2017.
- */
-
 @Service
 public class TireServiceImplementation implements TireService{
 

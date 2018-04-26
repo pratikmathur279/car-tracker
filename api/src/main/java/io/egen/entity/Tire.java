@@ -4,10 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.UUID;
 
-/**
- * Created by darav on 6/24/2017.
- */
-
 @Entity
 public class Tire {
 

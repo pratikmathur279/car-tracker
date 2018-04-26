@@ -10,10 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by darav on 6/24/2017.
- */
-
 @Service
 public class VehicleServiceImplementation implements VehicleService
 {
