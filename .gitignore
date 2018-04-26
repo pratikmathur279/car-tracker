@@ -1,0 +1,12 @@
+.idea
+target
+tracker.iml
+build
+target
+*.class
+.settings
+.metadata
+bower_components
+node_modules
+angularJs
+node_modules
