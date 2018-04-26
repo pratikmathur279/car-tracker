@@ -1,0 +1,16 @@
+<div class="panel-heading"><h3>Vehicle Location</h3></div>
+<div class="panel-body">
+    <div  ng-show="mapVm.showMap">
+        <h3 align="center">Vehicle Location in Last 30 minutes</h3>
+        <ui-gmap-google-map center='mapVm.map.center' zoom='mapVm.map.zoom'>
+            <ui-gmap-marker ng-repeat="m in mapVm.map.markers" coords="m.coordinates" icon="m.icon" idkey="m.id">
+            </ui-gmap-marker>
+        </ui-gmap-google-map>
+
+    </div>
+
+    <div ng-show="mapVm.noMapData">
+        <h3 align="center">No Data available for this vehicle for last 30 minutes...</h3>
+    </div>
+</div>
+

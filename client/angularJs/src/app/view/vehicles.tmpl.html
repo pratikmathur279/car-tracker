@@ -1,0 +1,49 @@
+<div class="panel-heading"><h3>Vehicle Details</h3></div>
+<div class="panel-body">
+    <div>
+        <input type="search" ng-model="vehiclesVm.searchText.vin" placeholder="Search vechicle" class="form-control">
+    </div>
+    <table class="table table-bordered table-responsive">
+        <thead>
+        <tr class="success">
+            <th ng-click="vehiclesVm.changeSort('vin')">Vin</th>
+            <th>Vehicle Location in Last 30 minutes</th>
+            <th>Analytics</th>
+            <th ng-click="vehiclesVm.changeSort('make')">Make</th>
+            <th ng-click="vehiclesVm.changeSort('model')">Model</th>
+            <th ng-click="vehiclesVm.changeSort('year')">Year</th>
+            <th>Red Line Rpm</th>
+            <th>Max fuel Volumn</th>
+            <th>Last Service Date</th>
+            <th ng-click="vehiclesVm.changeSort('highAlerts')">High Alerts Last 2 Hours</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr dir-paginate="vehicle in vehiclesVm.vehicles | filter:vehiclesVm.searchText.vin
+                            |orderBy:vehiclesVm.sorter.by:vehiclesVm.sorter.reverse |itemsPerPage:5">
+            <td><a ng-href="#!/alerts/{{vehicle.vin}}"> {{vehicle.vin}}</a></td>
+            <td><a ng-href="#!/map/{{vehicle.vin}}">
+                <img src="./images/map.png">
+            </a></td>
+            <td><a ng-href="#!/analytics/{{vehicle.vin}}">
+                <img src="./images/analytics.png">
+            </a></td>
+            <td>{{vehicle.make}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.year}}</td>
+            <td>{{vehicle.redlineRpm}}</td>
+            <td>{{vehicle.maxFuelVolume}}</td>
+            <td>{{vehicle.lastServiceDate|date:'yyyy-MM-dd HH:mm:ss'}}</td>
+            <td>{{vehicle.highAlerts}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <dir-pagination-controls
+            max-size="5"
+            direction-links="true"
+            boundary-links="true" >
+    </dir-pagination-controls>
+</div>
+
+
+

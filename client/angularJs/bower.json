@@ -1,0 +1,36 @@
+{
+  "name": "tracker",
+  "homepage": "https://github.com/daravind54/tracker",
+  "authors": [
+    "pratikmathur279 <pratikmathur279@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "angular-google-maps": "^2.4.1",
+    "angular-resource": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.6.0",
+    "angular-chart.js": "^1.1.1",
+    "angularUtils-pagination": "angular-utils-pagination#^0.11.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff",
+        "dist/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "jquery": {
+      "main": []
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<div class="panel-heading"><h3>Analytics</h3></div>
+<div class="panel-body">
+    <form>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="form-group" ng-init="" >
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(fuelVolume)"
+                           ng-model="analyticsVm.data.name" value="fuelVolume" checked="checked">
+                    <span>Fuel Volume</span>
+                </label>
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(engineRpm)"
+                           ng-model="analyticsVm.data.name" value="engineRpm">
+                    Engine Rpm
+                </label>
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(speed)"
+                           ng-model="analyticsVm.data.name" value="speed">
+                    Speed
+                </label>
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(engineHp)"
+                           ng-model="analyticsVm.data.name" value="engineHp">
+                    Engine Hp
+                </label>
+            </div>
+            <div class="form-group" ng-init="">
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(last30min)"
+                           ng-model="analyticsVm.filter.name" value="last30min" checked="checked">
+                    Last 30 minutes
+                </label>
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(last1hr)"
+                           ng-model="analyticsVm.filter.name" value="last1hr">
+                    Last 1 Hour
+                </label>
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(last3hr)"
+                           ng-model="analyticsVm.filter.name" value="last3hr">
+                    Last 3 Hour
+                </label>
+                <label>
+                    <input type="radio" ng-change="analyticsVm.changeFilters(last1day)"
+                           ng-model="analyticsVm.filter.name" value="last1day">
+                    Last 1 Day
+                </label>
+            </div>
+        </div>
+    </form>
+    <div class="col-md-8 col-md-offset-2">
+        <h3>{{analyticsVm.data.name}} in {{analyticsVm.filter.name}}</h3>
+    </div>
+    <canvas id="outreach" class="chart chart-line"
+                chart-labels="analyticsVm.socialChart.labels"
+                chart-data="analyticsVm.socialChart.data"
+                chart-series="analyticsVm.socialChart.series"
+                chart-colors="analyticsVm.socialChart.colors"
+                chart-options="analyticsVm.socialChart.options">
+
+    </canvas>
+
+
+
+</div>
+
